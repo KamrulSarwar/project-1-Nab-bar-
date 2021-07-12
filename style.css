@@ -1,0 +1,66 @@
+body{
+    background: rgb(240, 233, 233);
+}
+.kamrul{
+    width:1140px;
+    height:100px;
+    background: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:20px;
+    left:100px;
+}
+
+.kamrul:hover::after{
+    box-shadow: 1px 1px 1px 1px rgb(63, 62, 62);
+}
+
+.kamrul:hover::before{
+    box-shadow: 1px 1px 1px 1px rgb(63, 62, 62);
+}
+
+.kamrul::after{
+   content: "";
+   width:200px;
+   height:100%;
+   background: rgb(233, 53, 233);
+   position: absolute;
+   top:-10px;
+   left:-10px;
+   z-index: -1;
+}
+
+.kamrul::before{
+   content: "";
+   width:200px;
+   height:100%;
+   background: rgb(233, 53, 233);
+   position: absolute;
+   bottom:-10px;
+   right:-10px;
+   z-index: -1;
+}
+
+.menu li{
+    display: inline-block;
+    padding:10px;
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 22px;
+    color:grey;
+    display: block;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover{
+    background: rgb(255, 196, 1);
+    color:rgb(0, 0, 0);
+}
